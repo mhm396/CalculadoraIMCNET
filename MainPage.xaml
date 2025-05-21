@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BMICalc.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Black">
+
+    <VerticalStackLayout VerticalOptions="Center" Spacing="25" Margin="30">
+        <Label Text="Calculadora IMC"
+            TextColor="White"
+            HorizontalTextAlignment="Center"
+            />
+        <Entry 
+            BackgroundColor="Grey"
+            Placeholder="Su IMC"
+            HorizontalTextAlignment="Center"
+            PlaceholderColor="Beige"
+            Margin="130, 0"
+            x:Name="BMIResult"/>
+
+        <Entry 
+            x:Name="Peso"
+            BackgroundColor="Grey"
+            Placeholder="Ingrese su peso en Kg"
+            PlaceholderColor="Beige"
+            />
+        <Entry 
+            x:Name="Altura"
+            BackgroundColor="Grey"
+            Placeholder="Ingrese su altura en cm"
+            PlaceholderColor="Beige"
+            />
+        <Button 
+             Text="Calcular IMC"
+             FontSize="30"
+            Clicked="ev_CalcularBMI"/>
+
+    </VerticalStackLayout>
+
+
+
+</ContentPage>
